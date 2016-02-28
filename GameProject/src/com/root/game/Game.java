@@ -94,6 +94,9 @@ public class Game extends Canvas implements Runnable {
 		world.render(g);
 		player.render(g);
 		
+		g.setColor(Color.BLACK);
+		g.fillRect(0, getHeight() - 100, getWidth(), getHeight());
+		
 		g.dispose();
 		bs.show();
 	}
